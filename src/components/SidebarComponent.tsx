@@ -25,9 +25,9 @@ const NAV_ITEMS = {
 };
 
 const SidebarComponent = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState<string | null>(null);
 
-  const handleItemClick = (title) => {
+  const handleItemClick = (title: string) => {
     setSelectedItem(title);
   };
 
